@@ -1,0 +1,27 @@
+Dictionary ADT
+
+Dictionary (map, association list) is a data structure, which is generally an association of unique keys with some values. One may bind a value to a key, delete a key (and naturally an associated value) and lookup for a value by the key. Values are not required to be unique. Simple usage example is an explanatory dictionary. In the example, words are keys and explanations are values.
+Dictionary ADT
+
+Operations
+
+    Dictionary create()
+    creates empty dictionary
+
+    boolean isEmpty(Dictionary d)
+    tells whether the dictionary d is empty
+
+    put(Dictionary d, Key k, Value v)
+    associates key k with a value v;
+    if key k already presents in the dictionary
+    old value is replaced by v
+
+    Value get(Dictionary d, Key k)
+    returns a value, associated with key k
+    or null, if dictionary contains no such key
+
+    remove(Dictionary d, Key k)
+    removes key k and associated value
+
+    destroy(Dictionary d)
+    destroys dictionary d
