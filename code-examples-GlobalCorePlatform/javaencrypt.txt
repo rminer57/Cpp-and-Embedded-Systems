@@ -1,0 +1,238 @@
+DID NOT WORK...
+
+byte_t * XNLXCMPManager::encrypt( byte_t * randomKey, XNLAuthLevels authLvl )
+{
+  unsigned char * encryptedData = 0;
+
+
+  // Create a buffer big enough to hold the auth value bytes
+  encryptedData = new byte_t[AUTH_VALUE_SZ];
+
+  // clear array used to store the encrypted key
+  for(int j = 0; j < AUTH_VALUE_SZ; j++) encryptedData[j] = 0;
+
+#ifdef INCLUDEJAVASTUFF
+
+int useInvalidKey = 0;
+
+        // Authentication level keys.
+        int authKeyInt[] = {0x5A96301D,0x0CF2AA55,0xBF936CC6,0xBD5ECD5B};
+        int authKeyExt[] = {0xDCDDEC20,0xDCA8A530,0x2E4114AF,0x56612D85};
+        int authKeyExtPriv[] = {0xC3381C1D,0x1C8B6323,0x45B0FCA2,0xC4CA75D3};
+        
+        // Needed to separate into bytes since Java does not have unsigned integer data type.
+ //       unsigned char randomKey1[] = {(byte)randomKey[0],(byte)randomKey[1], (byte)randomKey[2], (byte)randomKey[3]};
+ //       unsigned char randomKey2[] = {(byte)randomKey[4],(byte)randomKey[5], (byte)randomKey[6], (byte)randomKey[7]};
+
+        byte_t randomKey1[] = {randomKey[0],randomKey[1], randomKey[2], randomKey[3]};
+        byte_t randomKey2[] = {randomKey[4],randomKey[5], randomKey[6], randomKey[7]};
+ 
+
+        LONG64 y = unsignedIntToLong(randomKey1);
+        LONG64 z = unsignedIntToLong(randomKey2);
+         
+        // clear array used to store the encrypted key
+        for(int j = 0; j < AUTH_VALUE_SZ; j++) encryptedData[j] = 0;
+
+                // Initialize variables.
+                int k[] = {0,0,0,0};
+                int delta = 0;
+                int sum = 0;
+                int lcv = 0;
+                
+                // Needed to remove the upper four bytes of FFs prior to continuing with
+                // the algorithm. This is needed because Java does not support unsigned integers.
+                //unsigned char *  byteTemp1 = new unsigned char [8];
+				byte_t  byteTemp1[] = {0,0,0,0,0,0,0,0};
+                byte_t  byteTemp2[] = {0,0,0,0};
+                
+                // Set key array and delta based on authentication level.
+                if (authLvl == XNL_AUTH_LVL_INT) 
+				{
+                    for(int i = 0 ; i<4; i++) 
+					{
+                        k[i] = authKeyInt[i];
+                    }
+
+                delta = 0x790AB771;
+
+                } 
+				else if (authLvl == XNL_AUTH_LVL_EXT) 
+				{
+                    for(int i = 0 ; i<4; i++) 
+					{
+                        k[i] = authKeyExt[i];
+                    }
+
+                    delta = 0x9E3779B9;
+                } 
+				else if (authLvl == XNL_AUTH_LVL_EXT_PRIV) 
+				{
+                    for(int i = 0 ; i<4; i++) 
+					{
+                        k[i] = authKeyExtPriv[i];
+                    }
+                    delta = 0x9E3779B9;
+                } else {
+                    // Error log here.
+                }
+
+                // if selected, use an invalid key, just modify the existing key
+                if(useInvalidKey)
+                {
+                        k[0] = 0x00000000;
+                }
+                // Encrypt random number with secret 128 bit key using public domain
+                // Tiny Encryption Algorithm.
+                for (int n = 32; n > 0; n--){ 
+                    sum += delta;
+                    
+                    y += (z<<4)+k[0] ^ z+sum ^ (z>>5)+k[1];
+                    
+                    // Convert long to bytes, keep only the last four bytes and convert
+                    // back to long.
+                    toBytes(y, byteTemp1);
+
+                    for(lcv = 0; lcv<4; lcv++) {
+                        byteTemp2[lcv] =  byteTemp1[lcv+4];
+                    }
+                    y = unsignedIntToLong(byteTemp2);
+                    
+                    
+                    z += (y<<4)+k[2] ^ y+sum ^ (y>>5)+k[3];
+                    
+                    // Convert long to bytes, keep only the last four bytes and convert
+                    // back to long.
+	                toBytes(z, byteTemp1);
+
+                    for(lcv = 0; lcv<4; lcv++) {
+                        byteTemp2[lcv] =  byteTemp1[lcv+4];
+                    }
+                    z = unsignedIntToLong(byteTemp2);
+                }
+                
+                // Final values for y and z.  Convert back to bytes and return data in encrypteddata.
+                
+
+                toBytes(y,byteTemp1); 
+
+                for(lcv = 0; lcv<4; lcv++) 
+				{
+                    encryptedData[lcv] =  byteTemp1[lcv+4];
+                }
+                
+                toBytes(z,byteTemp1);
+                for(lcv = 0; lcv<4; lcv++) 
+				{
+                    encryptedData[lcv+4] =  byteTemp1[lcv+4];
+                }
+
+
+#else
+
+  uint32_t* k;
+  uint32_t delta = 0;
+
+
+  // keys for all three levels
+  uint32_t authKeyInt[]     = {0x5A96301D,0x0CF2AA55,0xBF936CC6,0xBD5ECD5B}; // original
+  uint32_t authKeyExt[]     = {0xDCDDEC20,0xDCA8A530,0x2E4114AF,0x56612D85};
+  uint32_t authKeyExtPriv[] = {0xC3381C1D,0x1C8B6323,0x45B0FCA2,0xC4CA75D3};
+
+ 
+  switch (authLvl)
+  {
+     case XNL_AUTH_LVL_INT:
+           k = authKeyInt; // using this one
+           delta = 0x790AB771;
+	 break;
+
+     case XNL_AUTH_LVL_EXT:
+           k = authKeyExt;
+           delta = 0x9E3779B9;
+	 break;
+
+     case XNL_AUTH_LVL_EXT_PRIV:
+           k = authKeyExtPriv;
+           delta = 0x9E3779B9;
+	 break;
+
+  };
+ 
+	// Convert auth key into two 32 bit words
+	uint32_t y = ((randomKey[0])<<24)+((randomKey[1])<<16)+((randomKey[2])<<8)+(randomKey)[3];
+	uint32_t z = ((randomKey[4])<<24)+((randomKey[5])<<16)+((randomKey[6])<<8)+(randomKey)[7];
+	
+	if (k != 0)
+	{
+		uint32_t sum = 0;
+
+		// Encrypt random number with secret 128 bit key also using public domain Tiny Encryption Algorithm
+		for (int n = 32; n > 0; n--) 
+		{
+		  sum += delta;
+		  y += ((z<<4)+k[0]) ^ (z+sum) ^ ((z>>5)+k[1]);
+		  z += ((y<<4)+k[2]) ^ (y+sum) ^ ((y>>5)+k[3]);                  
+		}
+
+		uint32_t tmpVal = xutil_htonl(y);
+
+		//encryptedData->append((void*)&tmpVal, 4);
+        encryptedData[3] |= (unsigned char)((tmpVal >> 24) & 0x000000FF);
+        encryptedData[2] |= (unsigned char)((tmpVal >> 16) & 0x000000FF);
+        encryptedData[1] |= (unsigned char)((tmpVal >> 8)  & 0x000000FF);
+        encryptedData[0] |= (unsigned char)(tmpVal         & 0x000000FF);
+
+		tmpVal = xutil_htonl(z);
+
+		//encryptedData->append((void*)&tmpVal, 4);
+        encryptedData[7] |= (unsigned char)((tmpVal >> 24) & 0x000000FF);
+        encryptedData[6] |= (unsigned char)((tmpVal >> 16) & 0x000000FF);
+        encryptedData[5] |= (unsigned char)((tmpVal >> 8)  & 0x000000FF);
+        encryptedData[4] |= (unsigned char)(tmpVal         & 0x000000FF);
+	}
+#endif
+	return encryptedData;
+}
+
+LONG64 XNLXCMPManager::unsignedIntToLong( byte_t * b) 
+{
+        LONG64 l = 0;
+        l |= b[0] & 0xFF;
+        l <<= 8;
+        l |= b[1] & 0xFF;
+        l <<= 8;
+        l |= b[2] & 0xFF;
+        l <<= 8;
+        l |= b[3] & 0xFF;
+        return l;
+        
+     // Converts unsigned byte arrays into long.  Needed since
+    // Java does not have unsigned integer type.
+    
+    //public static final long unsignedIntToLong(byte[] b) {
+    //    long l = 0;
+    //    l |= b[0] & 0xFF;
+    //    l <<= 8;
+    //    l |= b[1] & 0xFF;
+    //    l <<= 8;
+    //    l |= b[2] & 0xFF;
+    //    l <<= 8;
+    //    l |= b[3] & 0xFF;
+    //    return l;
+    //}        
+}
+
+ 
+
+    // Returns an 8-byte array built from a long.
+void XNLXCMPManager::toBytes(LONG64 n, byte_t * dest) 
+{
+		for(int i = 0; i < 8; i++)
+		{
+         dest[i] = (byte_t)( n & 0x000000FF);
+		 n = n >> 8;
+		}
+		// Java equivalent Returns an 8-byte array built from a long.
+        //public static byte[] toBytes(long n) { return toBytes(n, new byte[8]); }        
+}
