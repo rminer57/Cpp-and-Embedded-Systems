@@ -1,0 +1,1213 @@
+*** COMMAND: void startSequence(int sequenceID) ***
+
+	DATA SENT:
+		int sequenceID = 32
+	*DEFAULT* RETURN DATA RECEIVED
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 0
+	RETURN DATA RECEIVED:
+		int return global register value = 0
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 1
+	RETURN DATA RECEIVED:
+		int return global register value = 2
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 2
+	RETURN DATA RECEIVED:
+		int return global register value = 3
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 3
+	RETURN DATA RECEIVED:
+		int return global register value = 0
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 4
+	RETURN DATA RECEIVED:
+		int return global register value = 5
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 5
+	RETURN DATA RECEIVED:
+		int return global register value = 0
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 6
+	RETURN DATA RECEIVED:
+		int return global register value = 0
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 7
+	RETURN DATA RECEIVED:
+		int return global register value = 7
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 8
+	RETURN DATA RECEIVED:
+		int return global register value = 8
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 9
+	RETURN DATA RECEIVED:
+		int return global register value = 9
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 10
+	RETURN DATA RECEIVED:
+		int return global register value = 10
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 11
+	RETURN DATA RECEIVED:
+		int return global register value = 11
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 12
+	RETURN DATA RECEIVED:
+		int return global register value = 12
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 13
+	RETURN DATA RECEIVED:
+		int return global register value = 13
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 14
+	RETURN DATA RECEIVED:
+		int return global register value = 14
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 15
+	RETURN DATA RECEIVED:
+		int return global register value = 15
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void startSequence(int sequenceID) ***
+
+	DATA SENT:
+		int sequenceID = 33
+	*DEFAULT* RETURN DATA RECEIVED
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 0
+	RETURN DATA RECEIVED:
+		int return global register value = 2
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 1
+	RETURN DATA RECEIVED:
+		int return global register value = 2
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 2
+	RETURN DATA RECEIVED:
+		int return global register value = 3
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 3
+	RETURN DATA RECEIVED:
+		int return global register value = 4
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 4
+	RETURN DATA RECEIVED:
+		int return global register value = 5
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 5
+	RETURN DATA RECEIVED:
+		int return global register value = 6
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 6
+	RETURN DATA RECEIVED:
+		int return global register value = 0
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 7
+	RETURN DATA RECEIVED:
+		int return global register value = 7
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 8
+	RETURN DATA RECEIVED:
+		int return global register value = 8
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 9
+	RETURN DATA RECEIVED:
+		int return global register value = 9
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 10
+	RETURN DATA RECEIVED:
+		int return global register value = 10
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 11
+	RETURN DATA RECEIVED:
+		int return global register value = 12
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 12
+	RETURN DATA RECEIVED:
+		int return global register value = 13
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 13
+	RETURN DATA RECEIVED:
+		int return global register value = 13
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 14
+	RETURN DATA RECEIVED:
+		int return global register value = 15
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 15
+	RETURN DATA RECEIVED:
+		int return global register value = 15
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void startSequence(int sequenceID) ***
+
+	DATA SENT:
+		int sequenceID = 34
+	*DEFAULT* RETURN DATA RECEIVED
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 0
+	RETURN DATA RECEIVED:
+		int return global register value = 3
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 1
+	RETURN DATA RECEIVED:
+		int return global register value = 2
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 2
+	RETURN DATA RECEIVED:
+		int return global register value = 3
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 3
+	RETURN DATA RECEIVED:
+		int return global register value = 4
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 4
+	RETURN DATA RECEIVED:
+		int return global register value = 5
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 5
+	RETURN DATA RECEIVED:
+		int return global register value = 6
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 6
+	RETURN DATA RECEIVED:
+		int return global register value = 0
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 7
+	RETURN DATA RECEIVED:
+		int return global register value = 7
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 8
+	RETURN DATA RECEIVED:
+		int return global register value = 8
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 9
+	RETURN DATA RECEIVED:
+		int return global register value = 9
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 10
+	RETURN DATA RECEIVED:
+		int return global register value = 10
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 11
+	RETURN DATA RECEIVED:
+		int return global register value = 12
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 12
+	RETURN DATA RECEIVED:
+		int return global register value = 13
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 13
+	RETURN DATA RECEIVED:
+		int return global register value = 13
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 14
+	RETURN DATA RECEIVED:
+		int return global register value = 15
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 15
+	RETURN DATA RECEIVED:
+		int return global register value = 15
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void startSequence(int sequenceID) ***
+
+	DATA SENT:
+		int sequenceID = 35
+	*DEFAULT* RETURN DATA RECEIVED
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 0
+	RETURN DATA RECEIVED:
+		int return global register value = -1
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 1
+	RETURN DATA RECEIVED:
+		int return global register value = 2
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 2
+	RETURN DATA RECEIVED:
+		int return global register value = 3
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 3
+	RETURN DATA RECEIVED:
+		int return global register value = 4
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 4
+	RETURN DATA RECEIVED:
+		int return global register value = 5
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 5
+	RETURN DATA RECEIVED:
+		int return global register value = 6
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 6
+	RETURN DATA RECEIVED:
+		int return global register value = 0
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 7
+	RETURN DATA RECEIVED:
+		int return global register value = 7
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 8
+	RETURN DATA RECEIVED:
+		int return global register value = 8
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 9
+	RETURN DATA RECEIVED:
+		int return global register value = 10
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 10
+	RETURN DATA RECEIVED:
+		int return global register value = 11
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 11
+	RETURN DATA RECEIVED:
+		int return global register value = 12
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 12
+	RETURN DATA RECEIVED:
+		int return global register value = 13
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 13
+	RETURN DATA RECEIVED:
+		int return global register value = 13
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 14
+	RETURN DATA RECEIVED:
+		int return global register value = 15
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 15
+	RETURN DATA RECEIVED:
+		int return global register value = 15
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void startSequence(int sequenceID) ***
+
+	DATA SENT:
+		int sequenceID = 36
+	*DEFAULT* RETURN DATA RECEIVED
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 0
+	RETURN DATA RECEIVED:
+		int return global register value = 3
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 1
+	RETURN DATA RECEIVED:
+		int return global register value = 2
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 2
+	RETURN DATA RECEIVED:
+		int return global register value = 3
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 3
+	RETURN DATA RECEIVED:
+		int return global register value = 4
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 4
+	RETURN DATA RECEIVED:
+		int return global register value = 5
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 5
+	RETURN DATA RECEIVED:
+		int return global register value = 6
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 6
+	RETURN DATA RECEIVED:
+		int return global register value = 0
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 7
+	RETURN DATA RECEIVED:
+		int return global register value = 7
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 8
+	RETURN DATA RECEIVED:
+		int return global register value = 8
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 9
+	RETURN DATA RECEIVED:
+		int return global register value = 10
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 10
+	RETURN DATA RECEIVED:
+		int return global register value = 11
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 11
+	RETURN DATA RECEIVED:
+		int return global register value = 12
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 12
+	RETURN DATA RECEIVED:
+		int return global register value = 13
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 13
+	RETURN DATA RECEIVED:
+		int return global register value = 13
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 14
+	RETURN DATA RECEIVED:
+		int return global register value = 15
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 15
+	RETURN DATA RECEIVED:
+		int return global register value = 15
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void startSequence(int sequenceID) ***
+
+	DATA SENT:
+		int sequenceID = 37
+	*DEFAULT* RETURN DATA RECEIVED
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 0
+	RETURN DATA RECEIVED:
+		int return global register value = -2
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 1
+	RETURN DATA RECEIVED:
+		int return global register value = 2
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 2
+	RETURN DATA RECEIVED:
+		int return global register value = 3
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 3
+	RETURN DATA RECEIVED:
+		int return global register value = 4
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 4
+	RETURN DATA RECEIVED:
+		int return global register value = 5
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 5
+	RETURN DATA RECEIVED:
+		int return global register value = 6
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 6
+	RETURN DATA RECEIVED:
+		int return global register value = 0
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 7
+	RETURN DATA RECEIVED:
+		int return global register value = 7
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 8
+	RETURN DATA RECEIVED:
+		int return global register value = 9
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 9
+	RETURN DATA RECEIVED:
+		int return global register value = 10
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 10
+	RETURN DATA RECEIVED:
+		int return global register value = 11
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 11
+	RETURN DATA RECEIVED:
+		int return global register value = 12
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 12
+	RETURN DATA RECEIVED:
+		int return global register value = 13
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 13
+	RETURN DATA RECEIVED:
+		int return global register value = 13
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 14
+	RETURN DATA RECEIVED:
+		int return global register value = 15
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 15
+	RETURN DATA RECEIVED:
+		int return global register value = 15
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void startSequence(int sequenceID) ***
+
+	DATA SENT:
+		int sequenceID = 38
+	*DEFAULT* RETURN DATA RECEIVED
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 0
+	RETURN DATA RECEIVED:
+		int return global register value = 3
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 1
+	RETURN DATA RECEIVED:
+		int return global register value = 2
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 2
+	RETURN DATA RECEIVED:
+		int return global register value = 3
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 3
+	RETURN DATA RECEIVED:
+		int return global register value = 4
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 4
+	RETURN DATA RECEIVED:
+		int return global register value = 5
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 5
+	RETURN DATA RECEIVED:
+		int return global register value = 6
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 6
+	RETURN DATA RECEIVED:
+		int return global register value = 0
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 7
+	RETURN DATA RECEIVED:
+		int return global register value = 7
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 8
+	RETURN DATA RECEIVED:
+		int return global register value = 9
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 9
+	RETURN DATA RECEIVED:
+		int return global register value = 10
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 10
+	RETURN DATA RECEIVED:
+		int return global register value = 11
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 11
+	RETURN DATA RECEIVED:
+		int return global register value = 12
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 12
+	RETURN DATA RECEIVED:
+		int return global register value = 13
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 13
+	RETURN DATA RECEIVED:
+		int return global register value = 13
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 14
+	RETURN DATA RECEIVED:
+		int return global register value = 15
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 15
+	RETURN DATA RECEIVED:
+		int return global register value = 15
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void startSequence(int sequenceID) ***
+
+	DATA SENT:
+		int sequenceID = 39
+	*DEFAULT* RETURN DATA RECEIVED
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 0
+	RETURN DATA RECEIVED:
+		int return global register value = 3
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 1
+	RETURN DATA RECEIVED:
+		int return global register value = 2
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 2
+	RETURN DATA RECEIVED:
+		int return global register value = 3
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 3
+	RETURN DATA RECEIVED:
+		int return global register value = 4
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 4
+	RETURN DATA RECEIVED:
+		int return global register value = 5
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 5
+	RETURN DATA RECEIVED:
+		int return global register value = 6
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 6
+	RETURN DATA RECEIVED:
+		int return global register value = 0
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 7
+	RETURN DATA RECEIVED:
+		int return global register value = 7
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 8
+	RETURN DATA RECEIVED:
+		int return global register value = 9
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 9
+	RETURN DATA RECEIVED:
+		int return global register value = 10
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 10
+	RETURN DATA RECEIVED:
+		int return global register value = 11
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 11
+	RETURN DATA RECEIVED:
+		int return global register value = 12
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 12
+	RETURN DATA RECEIVED:
+		int return global register value = 13
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 13
+	RETURN DATA RECEIVED:
+		int return global register value = 13
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 14
+	RETURN DATA RECEIVED:
+		int return global register value = 15
+
+&&& COMMAND COMPLETED &&&
+
+*** COMMAND: void getGlobal(int globalNumber) ***
+
+	DATA SENT:
+		int globalNumber = 15
+	RETURN DATA RECEIVED:
+		int return global register value = 15

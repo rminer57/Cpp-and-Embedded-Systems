@@ -1,0 +1,23 @@
+#*****************************************************************************************************************
+#*                                                    EXEC UNIT TEST
+#*             COPYRIGHT 2002 MOTOROLA, INC. ALL RIGHTS RESERVED.
+#*                                MOTOROLA CONFIDENTIAL PROPRIETARY
+#*                                            TEMPLATE VERSION R01.00
+#*
+#****************************************************************************************************************
+#===========================================================================================================
+#SEQUENCER UNIT TEST Created: 2/12/02
+#===========================================================================================================
+#The following command sequences will call the sequencer command group and the various sequences found 
+#in rfAudioInit.cpp for the purpose of unit testing the Sequencer.
+#After executing these command sequences, verify the output with the expected output file.  If the output differs, the sequence being called should be 
+#investigated.
+#For detailed information, see the unit test sequences in the rfAudioInit.cpp.
+#To run this test, copy the contents of this file into the commandSequence.txt file of the test harness server.
+#
+#NOTE:    If the following command sequences do not produce an output file, open the test.log file, then re-run the test.  There is a known issue with
+#the test harness that sometimes prevents the logging of information.
+#=====================================================================================================
+#Test Case 23: EXEC set/get frequency, getError, and setRFState
+#=====================================================================================================
+2,2,4,4,0x0000002B&

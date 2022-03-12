@@ -1,0 +1,45 @@
+*** COMMAND: void startSequence(int sequenceID) ***
+
+	DATA SENT:
+		int sequenceID = 43
+	REQUEST: void fractionalN::synchronize()
+		DATA RECEIVED: 
+		FREQUENCY DATA: 
+			NUMERATOR:   0
+			DENOMINATOR: 512
+			PRESCALER:   0
+			REF FREQ:    2.1 MHz
+			A:           28
+			B:           0
+			Warp:        1.55736e+013
+			FREQUENCY:   21 MHz
+
+		MODULATION DATA: 
+			MODULATION ATTENUATION: 6.4 dB
+			MODULATION SENSITIVITY: 5 KHz
+		GPO DATA: 
+			GPO 1: 1
+			GPO 2: 0
+			GPO 3: 0
+			GPO 4: 0
+
+	REQUEST: void fractionalN::synchronize()
+		DATA RECEIVED: 
+		FREQUENCY DATA: 
+			NUMERATOR:   322
+			DENOMINATOR: 384
+			PRESCALER:   16
+			REF FREQ:    2.4 MHz
+			A:           12
+			B:           11
+			Warp:        5.9773887e+014
+			FREQUENCY:   806.0125 MHz
+
+		MODULATION DATA: 
+			MODULATION ATTENUATION: 4 dB
+			MODULATION SENSITIVITY: 5 KHz
+		GPO DATA: 
+			GPO 1: 0
+			GPO 2: 1
+			GPO 3: 1
+			GPO 4: 0

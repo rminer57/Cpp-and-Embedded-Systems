@@ -1,0 +1,40 @@
+Register Syntax:
+----------------
+
+Reg,Sreg[L|l][0-9][[0-9]]		Lnn
+	[G|g][0-9][[0-9]]		Gnn
+	[D|d][0-9][[0-9]]:[G|g][0-3]	Dnn:Gn
+	[D|d][0-9][[0-9]]:[L|l][0-3]	Dnn:Ln
+
+Dreg	[L|l][0-9][0-9]			Lnn
+	[G|g][0-9][0-9]			Gnn
+
+Instruction Syntax:
+-------------------
+
+EXEC [L|l]n,comp:int,#imm			{note: 0 <= n <= 15}
+EXEC [L|l]n,comp:int,Reg[,Reg[,Reg[,Reg]]]]	{note: 0 <= n <= 15}
+
+MOVE DReg,#imm | Sreg
+ADD DReg,#imm | Sreg
+SUB DReg,#imm | Sreg
+AND DReg,#imm | Sreg
+OR  DReg,#imm | Sreg
+XOR DReg,#imm | Sreg
+
+JA  DReg,#imm16,[Reg:][dest8]			{note: if 'Reg' is omitted, PC relative is used automatically]
+JNE DReg,#imm16,[Reg:][dest8]
+JGT DReg,#imm16,[Reg:][dest8]
+JLT DReg,#imm16,[Reg:][dest8]
+JGE DReg,#imm16,[Reg:][dest8]
+JLE DReg,#imm16,[Reg:][dest8]
+
+DELAY #imm | Reg
+CALL #imm | Reg
+
+END
+
+0xffff				//hex
+$ffff
+%101010101			//Binary
+21231				//Dec

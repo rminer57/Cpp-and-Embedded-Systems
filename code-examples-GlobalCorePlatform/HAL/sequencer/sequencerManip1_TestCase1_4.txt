@@ -1,0 +1,212 @@
+#*****************************************************************************************************************
+#*                               SEQUENCER MANIP I: TEST CASES 1-4
+#*             COPYRIGHT 2002 MOTOROLA, INC. ALL RIGHTS RESERVED.
+#*                           MOTOROLA CONFIDENTIAL PROPRIETARY
+#*                                        TEMPLATE VERSION R01.00
+#*
+#****************************************************************************************************************
+#===========================================================================================================
+#SEQUENCER UNIT TEST Created: 2/12/02
+#===========================================================================================================
+#The following command sequences will call the sequencer command group and the various sequences found 
+#in rfAudioInit.cpp for the purpose of unit testing the Sequencer.
+#After executing these command sequences, verify the output with the expected output file.  If the output differs, the sequence being called should be 
+#investigated.
+#For detailed information, see the unit test sequences in the rfAudioInit.cpp.
+#To run this test, copy the contents of this file into the commandSequence.txt file of the test harness server.
+#
+#NOTE:    If the following command sequences do not produce an output file, open the test.log file, then re-run the test.  There is a known issue with
+#the test harness that sometimes prevents the logging of information.
+#===========================================================================================================
+#Test Case 1:  MANIPULATE LOAD - load global registers 0-15
+#===========================================================================================================
+#   -Start Sequence
+2,2,0,4,0x00000004&
+#   -Get Global
+2,1,4,4,0x00000000&
+2,1,4,4,0x00000001&
+2,1,4,4,0x00000002&
+2,1,4,4,0x00000003&
+2,1,4,4,0x00000004&
+2,1,4,4,0x00000005&
+2,1,4,4,0x00000006&
+2,1,4,4,0x00000007&
+2,1,4,4,0x00000008&
+2,1,4,4,0x00000009&
+2,1,4,4,0x0000000A&
+2,1,4,4,0x0000000B&
+2,1,4,4,0x0000000C&
+2,1,4,4,0x0000000D&
+2,1,4,4,0x0000000E&
+2,1,4,4,0x0000000F&
+#Verify that returned global values are = registerNumber + 1
+#============================================================================================================
+#Test Case 2:  MANIPULATE LOAD - load local registers 0-31
+#============================================================================================================
+#    -This sequence will load values to the local registers 0-15.  Then these local registers will be loaded 
+#     to their corresponding global register for verification via output file.
+#    -Start Sequence
+2,2,0,4,0x00000005&
+#    -Get Globals
+2,1,4,4,0x00000000&
+2,1,4,4,0x00000001&
+2,1,4,4,0x00000002&
+2,1,4,4,0x00000003&
+2,1,4,4,0x00000004&
+2,1,4,4,0x00000005&
+2,1,4,4,0x00000006&
+2,1,4,4,0x00000007&
+2,1,4,4,0x00000008&
+2,1,4,4,0x00000009&
+2,1,4,4,0x0000000A&
+2,1,4,4,0x0000000B&
+2,1,4,4,0x0000000C&
+2,1,4,4,0x0000000D&
+2,1,4,4,0x0000000E&
+2,1,4,4,0x0000000F&
+#    -This sequence will load values to the local registers 16-31.  Then these local registers will be loaded 
+#     to global registers (local register num) - 16. 
+#    -Start Sequence
+2,2,0,4,0x00000006&
+#    -Get Global
+2,1,4,4,0x00000000&
+2,1,4,4,0x00000001&
+2,1,4,4,0x00000002&
+2,1,4,4,0x00000003&
+2,1,4,4,0x00000004&
+2,1,4,4,0x00000005&
+2,1,4,4,0x00000006&
+2,1,4,4,0x00000007&
+2,1,4,4,0x00000008&
+2,1,4,4,0x00000009&
+2,1,4,4,0x0000000A&
+2,1,4,4,0x0000000B&
+2,1,4,4,0x0000000C&
+2,1,4,4,0x0000000D&
+2,1,4,4,0x0000000E&
+2,1,4,4,0x0000000F&
+#================================================================================================================
+#Test Case 3: MANIPULATE I ADD - loads numbers to global registers and adds the same number stored in the global 
+#register to itself.  Then repeats the same steps to test adding the local registers numbers.
+#Local registers are handled in sequence 8 and 9.  Sequence 8  corresponds to local 0-16 and and sequence 9 
+#corresponds to local 16-31.
+#================================================================================================================
+#    -Start Sequence
+2,2,0,4,0x00000007&
+#    -Get Global
+2,1,4,4,0x00000000&
+2,1,4,4,0x00000001&
+2,1,4,4,0x00000002&
+2,1,4,4,0x00000003&
+2,1,4,4,0x00000004&
+2,1,4,4,0x00000005&
+2,1,4,4,0x00000006&
+2,1,4,4,0x00000007&
+2,1,4,4,0x00000008&
+2,1,4,4,0x00000009&
+2,1,4,4,0x0000000A&
+2,1,4,4,0x0000000B&
+2,1,4,4,0x0000000C&
+2,1,4,4,0x0000000D&
+2,1,4,4,0x0000000E&
+2,1,4,4,0x0000000F&
+#    - Start Sequence
+2,2,0,4,0x00000008&
+#    -Get Global
+2,1,4,4,0x00000000&
+2,1,4,4,0x00000001&
+2,1,4,4,0x00000002&
+2,1,4,4,0x00000003&
+2,1,4,4,0x00000004&
+2,1,4,4,0x00000005&
+2,1,4,4,0x00000006&
+2,1,4,4,0x00000007&
+2,1,4,4,0x00000008&
+2,1,4,4,0x00000009&
+2,1,4,4,0x0000000A&
+2,1,4,4,0x0000000B&
+2,1,4,4,0x0000000C&
+2,1,4,4,0x0000000D&
+2,1,4,4,0x0000000E&
+2,1,4,4,0x0000000F&
+#    - Start Sequence
+2,2,0,4,0x00000009&
+#    -Get Global
+2,1,4,4,0x00000000&
+2,1,4,4,0x00000001&
+2,1,4,4,0x00000002&
+2,1,4,4,0x00000003&
+2,1,4,4,0x00000004&
+2,1,4,4,0x00000005&
+2,1,4,4,0x00000006&
+2,1,4,4,0x00000007&
+2,1,4,4,0x00000008&
+2,1,4,4,0x00000009&
+2,1,4,4,0x0000000A&
+2,1,4,4,0x0000000B&
+2,1,4,4,0x0000000C&
+2,1,4,4,0x0000000D&
+2,1,4,4,0x0000000E&
+2,1,4,4,0x0000000F&
+#====================================================================================================================
+#Test Case 4: MANIPULATE I SUBTRACT - loads numbers to global registers and subtracts the same number stored in the global 
+#registers to iself.  As a result, the final value should be 0.  The same procedure will be followed to test the local 
+#registers, execept the local registers will be tested using two sequences (sequence 11 (0xB) and 12 (0xC)).
+#=====================================================================================================================
+#    -Start Sequence
+2,2,0,4,0x0000000A&
+#    -Get Global
+2,1,4,4,0x00000000&
+2,1,4,4,0x00000001&
+2,1,4,4,0x00000002&
+2,1,4,4,0x00000003&
+2,1,4,4,0x00000004&
+2,1,4,4,0x00000005&
+2,1,4,4,0x00000006&
+2,1,4,4,0x00000007&
+2,1,4,4,0x00000008&
+2,1,4,4,0x00000009&
+2,1,4,4,0x0000000A&
+2,1,4,4,0x0000000B&
+2,1,4,4,0x0000000C&
+2,1,4,4,0x0000000D&
+2,1,4,4,0x0000000E&
+2,1,4,4,0x0000000F&
+#    - Start Sequence
+2,2,0,4,0x0000000B&
+#    -Get Global
+2,1,4,4,0x00000000&
+2,1,4,4,0x00000001&
+2,1,4,4,0x00000002&
+2,1,4,4,0x00000003&
+2,1,4,4,0x00000004&
+2,1,4,4,0x00000005&
+2,1,4,4,0x00000006&
+2,1,4,4,0x00000007&
+2,1,4,4,0x00000008&
+2,1,4,4,0x00000009&
+2,1,4,4,0x0000000A&
+2,1,4,4,0x0000000B&
+2,1,4,4,0x0000000C&
+2,1,4,4,0x0000000D&
+2,1,4,4,0x0000000E&
+2,1,4,4,0x0000000F&
+#    - Start Sequence
+2,2,0,4,0x0000000C&
+#    -Get Global
+2,1,4,4,0x00000000&
+2,1,4,4,0x00000001&
+2,1,4,4,0x00000002&
+2,1,4,4,0x00000003&
+2,1,4,4,0x00000004&
+2,1,4,4,0x00000005&
+2,1,4,4,0x00000006&
+2,1,4,4,0x00000007&
+2,1,4,4,0x00000008&
+2,1,4,4,0x00000009&
+2,1,4,4,0x0000000A&
+2,1,4,4,0x0000000B&
+2,1,4,4,0x0000000C&
+2,1,4,4,0x0000000D&
+2,1,4,4,0x0000000E&
+2,1,4,4,0x0000000F&
