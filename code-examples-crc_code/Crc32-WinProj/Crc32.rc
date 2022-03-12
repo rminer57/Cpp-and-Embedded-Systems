@@ -1,0 +1,210 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\Crc32.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Crc32.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CRC32_DIALOG DIALOGEX 0, 0, 257, 135
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Crc32"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Filename:",IDC_STATIC,10,10,220,8
+    EDITTEXT        IDC_EDIT_FILENAME,10,20,220,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSE,230,20,10,12
+    LTEXT           "CRC32 &Method",IDC_STATIC,10,40,100,8
+    COMBOBOX        IDC_COMBO_CRC32_METHOD,10,50,100,85,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&CRC32",IDC_CRC32,150,50,50,14
+    GROUPBOX        "Results",IDC_STATIC,10,75,230,50
+    LTEXT           "C&RC32:",IDC_STATIC,20,90,70,8
+    EDITTEXT        IDC_EDIT_CRC32,20,100,70,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Calculation &Time: (s)",IDC_STATIC,100,90,70,8
+    EDITTEXT        IDC_EDIT_TIME,100,100,70,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Clear Result&s",IDC_CLEAR,180,100,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Crc32 MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Crc32\0"
+            VALUE "LegalCopyright", "Copyright (C) 1901\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Crc32.EXE\0"
+            VALUE "ProductName", "Crc32 Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CRC32_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_CRC32_METHOD, 0x403, 20, 0
+0x7944, 0x616e, 0x696d, 0x2063, 0x2b43, 0x202b, 0x7453, 0x6572, 0x6d61, 
+0x0073, 
+    IDC_COMBO_CRC32_METHOD, 0x403, 18, 0
+0x7944, 0x616e, 0x696d, 0x2063, 0x6957, 0x336e, 0x2032, 0x2f49, 0x004f, 
+
+    IDC_COMBO_CRC32_METHOD, 0x403, 17, 0
+0x7944, 0x616e, 0x696d, 0x2063, 0x6946, 0x656c, 0x616d, 0x7370, "\000" 
+    IDC_COMBO_CRC32_METHOD, 0x403, 17, 0
+0x7944, 0x616e, 0x696d, 0x2063, 0x7341, 0x6573, 0x626d, 0x796c, "\000" 
+    IDC_COMBO_CRC32_METHOD, 0x403, 19, 0
+0x7453, 0x7461, 0x6369, 0x4320, 0x2b2b, 0x5320, 0x7274, 0x6165, 0x736d, 
+"\000" 
+    IDC_COMBO_CRC32_METHOD, 0x403, 17, 0
+0x7453, 0x7461, 0x6369, 0x5720, 0x6e69, 0x3233, 0x4920, 0x4f2f, "\000" 
+    IDC_COMBO_CRC32_METHOD, 0x403, 16, 0
+0x7453, 0x7461, 0x6369, 0x4620, 0x6c69, 0x6d65, 0x7061, 0x0073, 
+    IDC_COMBO_CRC32_METHOD, 0x403, 16, 0
+0x7453, 0x7461, 0x6369, 0x4120, 0x7373, 0x6d65, 0x6c62, 0x0079, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_CRC32_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 134
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\Crc32.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
