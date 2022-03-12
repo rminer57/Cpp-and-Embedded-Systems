@@ -1,0 +1,65 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PlatformClasses - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\Profiles\erm035\LOCALS~1\Temp\RSP7F.tmp" with contents
+[
+/nologo /MLd /W4 /Gm /GX /ZI /Od /I "./" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D PROCESSOR_ACCESS_SIZE=2 /FAs /Fa"Debug/" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\MotProjectsMiner\visualStudioSrcCode\PlatformClasses\Array.cpp"
+"D:\MotProjectsMiner\visualStudioSrcCode\PlatformClasses\ArrayDescriptor.cpp"
+"D:\MotProjectsMiner\visualStudioSrcCode\PlatformClasses\Connection.cpp"
+"D:\MotProjectsMiner\visualStudioSrcCode\PlatformClasses\IOVirtual.cpp"
+"D:\MotProjectsMiner\visualStudioSrcCode\PlatformClasses\IOVirtualSerial.cpp"
+"D:\MotProjectsMiner\visualStudioSrcCode\PlatformClasses\rfSpiBuffer.cpp"
+"D:\MotProjectsMiner\visualStudioSrcCode\PlatformClasses\SCharArray.cpp"
+"D:\MotProjectsMiner\visualStudioSrcCode\PlatformClasses\SIntArray.cpp"
+"D:\MotProjectsMiner\visualStudioSrcCode\PlatformClasses\TimerVirtual.cpp"
+"D:\MotProjectsMiner\visualStudioSrcCode\PlatformClasses\TypedBaseClass.cpp"
+]
+Creating command line "cl.exe @D:\Profiles\erm035\LOCALS~1\Temp\RSP7F.tmp" 
+Creating temporary file "D:\Profiles\erm035\LOCALS~1\Temp\RSP80.tmp" with contents
+[
+/nologo /out:"PlatformClasses.lib" 
+.\Debug\Array.obj
+.\Debug\ArrayDescriptor.obj
+.\Debug\Connection.obj
+.\Debug\IOVirtual.obj
+.\Debug\IOVirtualSerial.obj
+.\Debug\rfSpiBuffer.obj
+.\Debug\SCharArray.obj
+.\Debug\SIntArray.obj
+.\Debug\TimerVirtual.obj
+.\Debug\TypedBaseClass.obj
+]
+Creating command line "link.exe -lib @D:\Profiles\erm035\LOCALS~1\Temp\RSP80.tmp"
+<h3>Output Window</h3>
+Compiling...
+Array.cpp
+ArrayDescriptor.cpp
+Connection.cpp
+d:\motprojectsminer\visualstudiosrccode\platformclasses\connection.cpp(68) : warning C4100: 'type' : unreferenced formal parameter
+d:\motprojectsminer\visualstudiosrccode\platformclasses\connection.cpp(78) : warning C4100: 'event' : unreferenced formal parameter
+d:\motprojectsminer\visualstudiosrccode\platformclasses\connection.cpp(174) : warning C4100: 'type' : unreferenced formal parameter
+IOVirtual.cpp
+d:\motprojectsminer\visualstudiosrccode\platformclasses\iovirtual.cpp(91) : warning C4100: 'evt' : unreferenced formal parameter
+IOVirtualSerial.cpp
+rfSpiBuffer.cpp
+SCharArray.cpp
+SIntArray.cpp
+TimerVirtual.cpp
+d:\motprojectsminer\visualstudiosrccode\platformclasses\timervirtual.cpp(51) : warning C4100: 'evt' : unreferenced formal parameter
+TypedBaseClass.cpp
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+PlatformClasses.lib - 0 error(s), 5 warning(s)
+</pre>
+</body>
+</html>
